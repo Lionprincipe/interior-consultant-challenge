@@ -3,3 +3,152 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #181719;
+  color: #ffffff;
+  min-width: 375px;
+  min-height: 776px;
+  position: relative;
+}
+
+nav {
+  display: none;
+}
+
+.brand__name {
+  position: absolute;
+  width: 86px;
+  height: 16px;
+  left: 20px;
+  top: 27px;
+
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+
+.main__headline {
+  position: absolute;
+  width: 274px;
+  height: 46px;
+  left: 12px;
+  top: 88px;
+
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.main__description {
+  position: absolute;
+  width: 250px;
+  height: 85px;
+  left: 12px;
+  top: 159px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ffffff;
+}
+
+.link__read-more {
+  position: absolute;
+  width: 80px;
+  height: 17px;
+  left: 12px;
+  top: 269px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.author__card__username {
+  position: absolute;
+  width: 133.03px;
+  height: 12.44px;
+  left: 125.17px;
+  top: 552.83px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #ffffff;
+}
+.author__card__job-title {
+  position: absolute;
+  width: 142.83px;
+  height: 10.98px;
+  left: 125.17px;
+  top: 571.12px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+
+  /* Gray 3 */
+
+  color: #828282;
+}
+
+.author__card__details {
+  position: absolute;
+  width: 210px;
+  height: 45px;
+  left: 71px;
+  top: 604px;
+
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #ffffff;
+}
+
+.footer__sign {
+  position: absolute;
+  width: 287px;
+  height: 17px;
+  left: 44px;
+  top: 735px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #a9a9a9;
+}

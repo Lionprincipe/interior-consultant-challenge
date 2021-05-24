@@ -52,6 +52,7 @@ nav {
 
   color: #ffffff;
 }
+
 .main__description {
   position: absolute;
   width: 250px;
@@ -83,6 +84,68 @@ nav {
   /* identical to box height */
 
   color: #ffffff;
+}
+.main__illustration {
+  position: absolute;
+  width: calc(375px - 24px);
+  height: 279.34px;
+  left: 12px;
+  top: 311.57px;
+  overflow: hidden;
+}
+
+.main__illustration img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  max-width: 391.06px;
+}
+
+/* .author__card {
+  background-color: #181719;
+  position: absolute;
+  width: 300px;
+  height: 138px;
+  left: 52px;
+  top: 536px;
+
+  background: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+
+.author__card__picture {
+  position: absolute;
+  width: 62.2px;
+  height: 52.68px;
+  left: 62.24px;
+  top: 543.32px;
+}
+.author__card__picture:before {
+  content: '';
+  background-color: #181719;
+  position: absolute;
+  width: 300px;
+  height: 138px;
+  left: -10px;
+  top: 0;
+}
+
+.author__card__picture::after {
+  content: '';
+  position: inherit;
+  width: inherit;
+  height: inherit;
+  padding-bottom: 30%;
+  background-image: radial-gradient(
+    circle at center,
+    transparent 0 50%,
+    #181719 50% 100%
+  );
+}
+.author__card__picture img {
+  position: absolute;
+  width: 62px;
 }
 
 .author__card__username {

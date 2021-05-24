@@ -13,6 +13,17 @@ body {
   min-width: 375px;
   min-height: 776px;
   position: relative;
+  padding-bottom: 102px;
+}
+
+header {
+  padding: 19px 12px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  padding-left: 12px;
 }
 
 nav {
@@ -20,14 +31,11 @@ nav {
 }
 
 .header__menu {
-  position: absolute;
-  top: 25.5px;
-  right: 12.5px;
   font-size: 25.5px;
   /* Gray 6 */
-
   color: #f2f2f2;
 }
+
 .header__menu.material-icons {
   font-size: 28.5px;
   line-height: 19px;
@@ -35,10 +43,6 @@ nav {
 }
 
 .brand__name {
-  position: absolute;
-
-  left: 20px;
-  top: 27px;
   display: inline-block;
   border: 1px solid #ffffff;
   padding: 8px;
@@ -53,11 +57,9 @@ nav {
 }
 
 .main__headline {
-  position: absolute;
-  width: 274px;
-  height: 46px;
-  left: 12px;
-  top: 88px;
+  max-width: 274px;
+  min-height: 46px;
+  padding-bottom: 25px;
 
   font-family: Lora;
   font-style: normal;
@@ -70,11 +72,9 @@ nav {
 }
 
 .main__description {
-  position: absolute;
-  width: 250px;
-  height: 85px;
-  left: 12px;
-  top: 159px;
+  max-width: 250px;
+  min-height: 85px;
+  padding-bottom: 25px;
 
   font-family: Montserrat;
   font-style: normal;
@@ -86,86 +86,75 @@ nav {
 }
 
 .link__read-more {
-  position: absolute;
-  height: 17px;
-  left: 12px;
-  top: 269px;
-
+  min-height: 17px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 26px;
+
   /* identical to box height */
 
   color: #ffffff;
 }
 .link__read-more .material-icons {
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 19px;
+  line-height: 7px;
   padding-left: 15px;
 }
 
+.design__card {
+  padding-top: 12px;
+  min-height: 363px;
+  position: relative;
+}
 .main__illustration {
-  position: absolute;
   width: calc(375px - 24px);
-  height: 279.34px;
-  left: 12px;
-  top: 311.57px;
+  max-height: 280px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .main__illustration img {
-  position: absolute;
-  left: 0px;
-  top: 0px;
   display: block;
-  max-width: 391.06px;
+  max-width: 350px;
+}
+.design__info {
+  position: absolute;
+  left: 40px;
+  top: 225px;
+  width: 300px;
+  padding-top: 8px;
+  padding-left: 10px;
+
+  background: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.author__card {
+  display: flex;
+  align-items: center;
 }
 
 .author__card__picture {
-  position: absolute;
   width: 62.2px;
   height: 52.68px;
-  left: 62.24px;
-  top: 543.32px;
-}
-.author__card__picture:before {
-  content: '';
-  background-color: #181719;
-  position: absolute;
-  width: 300px;
-  height: 138px;
-  left: -10px;
-  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.author__card__picture::after {
-  content: '';
-  position: inherit;
-  width: inherit;
-  height: inherit;
-  padding-bottom: 30%;
-  background-image: radial-gradient(
-    circle at center,
-    transparent 0 50%,
-    #181719 50% 100%
-  );
-}
 .author__card__picture img {
-  position: absolute;
-  width: 62px;
+  display: block;
+  width: 37px;
+  border-radius: 50%;
 }
 
 .author__card__username {
-  position: absolute;
-  width: 133.03px;
-  height: 12.44px;
-  left: 125.17px;
-  top: 552.83px;
-
+  display: inline-block;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -175,12 +164,8 @@ nav {
   color: #ffffff;
 }
 .author__card__job-title {
-  position: absolute;
-  width: 142.83px;
-  height: 10.98px;
-  left: 125.17px;
-  top: 571.12px;
-
+  display: inline-block;
+  width: 100%;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -193,11 +178,9 @@ nav {
 }
 
 .author__card__details {
-  position: absolute;
-  width: 210px;
-  height: 45px;
-  left: 71px;
-  top: 604px;
+  padding-top: 8px;
+  padding-left: 20px;
+  max-width: 210px;
 
   font-family: Lora;
   font-style: normal;
@@ -207,18 +190,21 @@ nav {
 
   color: #ffffff;
 }
-
-.footer__sign {
+footer {
   position: absolute;
-  height: 17px;
-  left: 44px;
-  top: 735px;
-
+  min-width: 375px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 24px;
+}
+.footer__sign {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+
   /* identical to box height */
 
   text-align: center;

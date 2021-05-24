@@ -19,13 +19,29 @@ nav {
   display: none;
 }
 
+.header__menu {
+  position: absolute;
+  top: 25.5px;
+  right: 12.5px;
+  font-size: 25.5px;
+  /* Gray 6 */
+
+  color: #f2f2f2;
+}
+.header__menu.material-icons {
+  font-size: 28.5px;
+  line-height: 19px;
+  font-stretch: ultra-expanded;
+}
+
 .brand__name {
   position: absolute;
-  width: 86px;
-  height: 16px;
+
   left: 20px;
   top: 27px;
-
+  display: inline-block;
+  border: 1px solid #ffffff;
+  padding: 8px;
   font-family: Crimson Pro;
   font-style: normal;
   font-weight: 200;
@@ -71,7 +87,6 @@ nav {
 
 .link__read-more {
   position: absolute;
-  width: 80px;
   height: 17px;
   left: 12px;
   top: 269px;
@@ -81,10 +96,18 @@ nav {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
+  display: flex;
+  justify-content: center;
   /* identical to box height */
 
   color: #ffffff;
 }
+.link__read-more .material-icons {
+  font-size: 15px;
+  line-height: 17px;
+  padding-left: 15px;
+}
+
 .main__illustration {
   position: absolute;
   width: calc(375px - 24px);
@@ -101,18 +124,6 @@ nav {
   display: block;
   max-width: 391.06px;
 }
-
-/* .author__card {
-  background-color: #181719;
-  position: absolute;
-  width: 300px;
-  height: 138px;
-  left: 52px;
-  top: 536px;
-
-  background: #181719;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
 
 .author__card__picture {
   position: absolute;
@@ -199,7 +210,6 @@ nav {
 
 .footer__sign {
   position: absolute;
-  width: 287px;
   height: 17px;
   left: 44px;
   top: 735px;
@@ -214,4 +224,7 @@ nav {
   text-align: center;
 
   color: #a9a9a9;
+}
+.footer__sign strong {
+  text-decoration: underline;
 }

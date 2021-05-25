@@ -17,8 +17,12 @@
     <title>Interior consultant - page</title>
   </head>
   <body>
+    <input type="checkbox" name="" id="menu__toggler" />
     <header>
       <span class="brand__name">This Interior</span>
+      <label for="menu__toggler" class="header__menu__close">
+        <span class="material-icons"> close </span>
+      </label>
       <nav>
         <ul>
           <li class="nav__link nav__link--active">Home</li>
@@ -27,16 +31,17 @@
           <li class="nav__link">Contact</li>
         </ul>
       </nav>
-      <div class="header__menu">
+      <label for="menu__toggler" class="header__menu__open">
         <span class="material-icons"> menu </span>
-      </div>
+      </label>
     </header>
     <main>
       <section class="service__info">
         <h1 class="main__headline">Modern interior</h1>
         <p class="main__description">
           A full-Service residential & commercial interior design and staging
-          company offering professional organizing & <nobr>eco-services</nobr>.
+          company offering professional organizing &
+          <nobr>eco-services</nobr>.
         </p>
         <a href="#" class="link__read-more"
           ><span>Read more</span>

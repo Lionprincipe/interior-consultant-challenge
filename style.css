@@ -6,18 +6,25 @@
 }
 a {
   text-decoration: none;
+  color: currentColor;
 }
 ul {
   list-style: none;
+  margin-inline: 0;
+  padding-inline: 0;
 }
 
 body {
-  background: #181719;
+  font-size: 16px;
+  font-size: 18px;
+
   color: #ffffff;
+  background: #181719;
   min-width: 375px;
   min-height: 776px;
   position: relative;
   padding-bottom: 102px;
+  font-family: Montserrat;
 }
 
 header {
@@ -41,10 +48,10 @@ nav {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  font-family: Montserrat;
 }
 
 .nav__link--active {
+  padding-bottom: 8px;
   border-bottom: 2px solid #ffffff;
 }
 
@@ -64,10 +71,72 @@ nav {
 }
 
 .header__menu {
-  font-size: 25.5px;
-  margin-right: 12px;
   /* Gray 6 */
   color: #f2f2f2;
+}
+
+.header__menu__close {
+  color: #f2f2f2;
+  cursor: pointer;
+  display: none;
+  font-size: 22.5px;
+}
+
+.header__menu__open {
+  cursor: pointer;
+  color: #f2f2f2;
+  font-size: 25.5px;
+  margin-right: 12px;
+}
+
+#menu__toggler {
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+#menu__toggler:checked {
+  height: 40px;
+  width: 30px;
+}
+#menu__toggler:checked + header {
+  position: absolute;
+  z-index: 1000;
+  padding: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #181719;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu__toggler:checked + header nav {
+  display: block;
+}
+#menu__toggler:checked + header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu__toggler:checked + header nav ul li {
+  margin-left: 0px;
+  text-align: center;
+  display: inline-block;
+}
+#menu__toggler:checked + header nav ul li:not(:last-child) {
+  margin-bottom: 32px;
+}
+#menu__toggler:checked + header .header__menu__close {
+  position: absolute;
+  display: block;
+  top: 22px;
+  right: 20px;
+}
+#menu__toggler:checked + header .brand__name,
+#menu__toggler:checked + header .header__menu__open {
+  display: none;
 }
 
 .header__menu .material-icons {
@@ -101,8 +170,6 @@ nav {
   font-size: 36px;
   line-height: 46px;
   /* identical to box height */
-
-  color: #ffffff;
 }
 
 .main__description {
@@ -110,18 +177,14 @@ nav {
   min-height: 85px;
   padding-bottom: 25px;
 
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-
-  color: #ffffff;
 }
 
 .link__read-more {
   min-height: 17px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -131,8 +194,6 @@ nav {
   margin-bottom: 26px;
 
   /* identical to box height */
-
-  color: #ffffff;
 }
 
 .link__read-more .material-icons {
@@ -194,18 +255,14 @@ nav {
 
 .author__card__username {
   display: inline-block;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-
-  color: #ffffff;
 }
 .author__card__job-title {
   display: inline-block;
   width: 100%;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
@@ -226,8 +283,6 @@ nav {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-
-  color: #ffffff;
 }
 
 footer {
@@ -239,7 +294,6 @@ footer {
   padding-bottom: 24px;
 }
 .footer__sign {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

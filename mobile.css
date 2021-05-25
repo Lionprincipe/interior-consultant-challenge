@@ -17,14 +17,12 @@ body {
 }
 
 header {
-  padding-top: 19px;
-  padding-left: 12px;
+  padding: 19px 12px 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 main {
-  padding-top: 35px;
   padding-left: 12px;
 }
 
@@ -34,7 +32,6 @@ nav {
 
 .header__menu {
   font-size: 25.5px;
-  margin-right: 12px;
   /* Gray 6 */
   color: #f2f2f2;
 }
@@ -115,7 +112,6 @@ nav {
   min-height: 363px;
   position: relative;
 }
-
 .main__illustration {
   width: calc(375px - 24px);
   max-height: 280px;
@@ -128,7 +124,6 @@ nav {
   display: block;
   max-width: 350px;
 }
-
 .design__info {
   position: absolute;
   left: 40px;
@@ -140,7 +135,6 @@ nav {
   background: #181719;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .author__card {
   display: flex;
   align-items: center;
@@ -220,74 +214,4 @@ footer {
 }
 .footer__sign strong {
   text-decoration: underline;
-}
-
-@media only screen and (min-width: 1440px) {
-  body {
-    min-width: 1440px;
-    padding-bottom: 170px;
-  }
-  header {
-    padding: 0;
-    padding-top: 42px;
-    padding-left: 77px;
-    padding-right: 77px;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-  main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 77px;
-    padding-right: 44px;
-    max-width: 1440px;
-    min-height: 632px;
-    margin: 145px auto 0;
-  }
-  .service__info {
-    /* border: red 1px solid; */
-  }
-  .design__show-case {
-    /* border: red 1px solid; */
-    min-width: 820px;
-    min-height: 632px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .main__illustration {
-    width: 738px;
-    max-height: 586px;
-    overflow: hidden;
-  }
-
-  .main__illustration img {
-    display: block;
-    max-width: 738px;
-  }
-
-  .design__info {
-    position: absolute;
-    left: 300px;
-    top: 500px;
-    width: 410px;
-  }
-  .link__read-more {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .main__description {
-    max-width: 410px;
-    font-size: 24px;
-    line-height: 29px;
-    padding-bottom: 48px;
-  }
-  .main__headline {
-    max-width: 365px;
-    font-size: 48px;
-    line-height: 61px;
-    padding-bottom: 40px;
-  }
 }

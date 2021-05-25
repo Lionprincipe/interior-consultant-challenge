@@ -112,6 +112,7 @@ nav {
   min-height: 363px;
   position: relative;
 }
+
 .main__illustration {
   width: calc(375px - 24px);
   max-height: 280px;
@@ -124,6 +125,7 @@ nav {
   display: block;
   max-width: 350px;
 }
+
 .design__info {
   position: absolute;
   left: 40px;

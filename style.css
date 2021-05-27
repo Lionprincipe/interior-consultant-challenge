@@ -4,40 +4,42 @@
   margin-block: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: currentColor;
 }
+
 ul {
   list-style: none;
   margin-inline: 0;
   padding-inline: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-size: 16px;
-  font-size: 18px;
-
   color: #ffffff;
   background: #181719;
-  min-width: 375px;
-  min-height: 776px;
   position: relative;
-  padding-bottom: 102px;
+  padding-bottom: 6.375rem;
   font-family: Montserrat;
 }
 
 header {
-  padding-top: 19px;
-  padding-left: 12px;
+  padding-top: 1.19em;
+  padding-left: 0.75em;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 main {
-  padding-top: 35px;
-  padding-left: 12px;
+  padding-top: 2.19em;
+  padding-left: 0.75em;
 }
 
 nav {
@@ -46,12 +48,12 @@ nav {
 
 .nav__link {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125em;
+  line-height: 1.22em;
 }
 
 .nav__link--active {
-  padding-bottom: 8px;
+  padding-bottom: 0.44em;
   border-bottom: 2px solid #ffffff;
 }
 
@@ -67,11 +69,10 @@ nav {
 }
 
 .nav__link:not(:first-child) {
-  margin-left: 68px;
+  margin-left: 3.78em;
 }
 
 .header__menu {
-  /* Gray 6 */
   color: #f2f2f2;
 }
 
@@ -79,14 +80,19 @@ nav {
   color: #f2f2f2;
   cursor: pointer;
   display: none;
-  font-size: 22.5px;
+  font-size: 1.4em;
+}
+
+.header__menu__close .header__menu__btn.material-icons,
+.header__menu__open .header__menu__btn.material-icons {
+  font-size: inherit;
+  cursor: pointer;
+  color: #f2f2f2;
 }
 
 .header__menu__open {
-  cursor: pointer;
-  color: #f2f2f2;
-  font-size: 25.5px;
-  margin-right: 12px;
+  margin-right: 0.47em;
+  font-size: 1.6em;
 }
 
 #menu__toggler {
@@ -94,10 +100,7 @@ nav {
   width: 0;
   position: absolute;
 }
-#menu__toggler:checked {
-  height: 40px;
-  width: 30px;
-}
+
 #menu__toggler:checked + header {
   position: absolute;
   z-index: 1000;
@@ -111,9 +114,11 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
 #menu__toggler:checked + header nav {
   display: block;
 }
+
 #menu__toggler:checked + header nav ul {
   display: flex;
   flex-direction: column;
@@ -126,91 +131,83 @@ nav {
   display: inline-block;
 }
 #menu__toggler:checked + header nav ul li:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 2em;
 }
+
 #menu__toggler:checked + header .header__menu__close {
   position: absolute;
   display: block;
-  top: 22px;
-  right: 20px;
+  top: 1.375em;
+  right: 1.25em;
 }
+
 #menu__toggler:checked + header .brand__name,
 #menu__toggler:checked + header .header__menu__open {
   display: none;
 }
 
-.header__menu .material-icons {
-  font-size: 28.5px;
-  line-height: 19px;
-  font-stretch: ultra-expanded;
-}
-
 .brand__name {
   display: inline-block;
   border: 1px solid #ffffff;
-  padding: 8px;
+  padding: 0.5em;
   font-family: Crimson Pro;
   font-style: normal;
   font-weight: 200;
-  font-size: 14px;
-  line-height: 16px;
-  /* identical to box height */
+  font-size: 0.875em;
+  line-height: 1em;
 
   text-transform: uppercase;
 }
 
 .main__headline {
-  max-width: 274px;
-  min-height: 46px;
-  padding-bottom: 25px;
+  max-width: 17.2em;
+  min-height: 1.28em;
+  padding-bottom: 0.7em;
 
   font-family: Lora;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 46px;
-  /* identical to box height */
+  font-size: 2.25em;
+  line-height: 1.28em;
 }
 
 .main__description {
-  max-width: 250px;
-  min-height: 85px;
-  padding-bottom: 25px;
+  max-width: 17.86em;
+  min-height: 6.07em;
+  padding-bottom: 1.78em;
 
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875em;
+  line-height: 1.21em;
 }
 
 .link__read-more {
-  min-height: 17px;
+  min-height: 1.21em;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875em;
+  line-height: 1.21em;
   display: flex;
   align-items: center;
-  margin-bottom: 26px;
-
-  /* identical to box height */
+  margin-bottom: 1.86em;
 }
 
 .link__read-more .material-icons {
-  font-size: 19px;
-  line-height: 7px;
-  padding-left: 15px;
+  font-size: 1.19em;
+  line-height: 0.37em;
+  padding-left: 0.79em;
 }
 
 .design__card {
-  padding-top: 12px;
-  min-height: 363px;
+  padding-top: 0.75em;
+  min-height: 22.7em;
   position: relative;
 }
 
 .main__illustration {
-  width: calc(375px - 24px);
-  max-height: 280px;
+  width: 21.94em;
+  max-height: 17.5em;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -218,17 +215,17 @@ nav {
 
 .main__illustration img {
   display: block;
-  max-width: 350px;
+  max-width: 21.875em;
 }
 
 .design__info {
   position: absolute;
-  left: 40px;
-  top: 225px;
-  width: 300px;
+  left: 2.5em;
+  top: 14.07em;
+  width: 18.75em;
 
-  padding-top: 8px;
-  padding-left: 10px;
+  padding-top: 0.5em;
+  padding-left: 0.625em;
 
   background: #181719;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -240,8 +237,8 @@ nav {
 }
 
 .author__card__picture {
-  width: 62.2px;
-  height: 52.68px;
+  width: 3.89em;
+  height: 3.29em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,7 +246,7 @@ nav {
 
 .author__card__picture img {
   display: block;
-  width: 37px;
+  width: 2.31em;
   border-radius: 50%;
 }
 
@@ -257,32 +254,31 @@ nav {
   display: inline-block;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.75em;
+  line-height: 1.25em;
 }
+
 .author__card__job-title {
   display: inline-block;
   width: 100%;
   font-style: normal;
   font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
-
-  /* Gray 3 */
+  font-size: 0.625em;
+  line-height: 1.2em;
 
   color: #828282;
 }
 
 .author__card__details {
-  padding-top: 8px;
-  padding-left: 20px;
-  max-width: 210px;
+  padding-top: 0.44em;
+  padding-left: 1.1em;
+  max-width: 11.67em;
 
   font-family: Lora;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1.125em;
+  line-height: 1.28em;
 }
 
 footer {
@@ -293,46 +289,63 @@ footer {
   bottom: 0;
   padding-bottom: 24px;
 }
+
 .footer__sign {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-
-  /* identical to box height */
-
   text-align: center;
-
   color: #a9a9a9;
 }
+
 .footer__sign strong {
   text-decoration: underline;
 }
-
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 375px) {
   body {
-    min-width: 1440px;
-    padding-bottom: 280px;
+    min-width: 375px;
+    min-height: 776px;
+    font-size: 16px;
   }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 716px),
+  (min-width: 716px) and (max-width: 1024px) and (orientation: portrait) {
+  body {
+    font-size: calc(100vw * 16 / 375);
+  }
+  main,
   header {
-    padding-bottom: 169px;
-    padding-top: 42px;
-    padding-left: 77px;
-    padding-right: 77px;
+    min-width: 375px;
+    width: calc(100vw);
+  }
+}
+
+@media only screen and (min-width: 716px) and (max-width: 1024px) and (orientation: landscape),
+  (min-width: 1024px) {
+  body {
+    padding-bottom: 17.5em;
+    font-size: 16px;
+  }
+
+  header {
+    padding-bottom: 10.56em;
+    padding-top: 2.875em;
+    padding-left: 4.81em;
+    padding-right: 4.81em;
     max-width: 1440px;
     margin: 0 auto;
   }
+
   nav {
     display: block;
     flex-grow: 1;
   }
+
   nav ul {
     display: flex;
     justify-content: flex-end;
-  }
-
-  .header__menu {
-    display: none;
   }
 
   main {
@@ -340,8 +353,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding-top: 0;
-    padding-left: 77px;
-    padding-right: 44px;
+    padding-left: 4.81em;
+    padding-right: 2.75em;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -349,90 +362,108 @@ footer {
   .design__card {
     padding-top: 0;
   }
-  /* .service__info {
-     border: red 1px solid;
-  } */
 
   .design__show-case {
-    /* border: red 1px solid; */
-    min-width: 820px;
+    min-width: 51.25px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .main__illustration {
-    width: 738px;
-    max-height: 555px;
+    width: 46.125em;
+
+    max-height: 34.69em;
     overflow: hidden;
   }
 
   .main__illustration img {
     display: block;
-    max-width: 738px;
+    max-width: 46.125em;
   }
 
   .design__info {
     position: absolute;
-    left: 295px;
-    top: 477px;
-    width: 410px;
-    min-height: 189px;
-    padding-top: 10px;
-    padding-left: 14px;
+    left: 18.44em;
+    top: 29.81em;
+    width: 25.625em;
+    min-height: 11.81em;
+    padding-top: 0.625em;
+    padding-left: 0.875em;
   }
 
   .link__read-more {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.125em;
+    line-height: 1.22em;
   }
 
   .main__description {
-    max-width: 410px;
-    font-size: 24px;
-    line-height: 29px;
-    padding-bottom: 48px;
+    max-width: 17.08em;
+    font-size: 1.5em;
+    line-height: 1.21em;
+    padding-bottom: 2em;
   }
 
   .main__headline {
-    max-width: 365px;
-    font-size: 48px;
-    line-height: 61px;
-    padding-bottom: 40px;
+    max-width: 7.6em;
+    font-size: 3em;
+    line-height: 1.27em;
+    padding-bottom: 0.83em;
   }
 
   .author__card > div:last-child {
-    height: 72px;
+    height: 4.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   .author__card__job-title {
-    margin-top: 8px;
+    /* margin-top: 8px;
     font-size: 12px;
     line-height: 15px;
+  */
+    margin-top: 0.67em;
+    font-size: 0.75em;
+    line-height: 1, 25em;
   }
 
   .author__card__username {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 0.875em;
+    line-height: 1.21em;
   }
 
   .author__card__details {
-    margin-top: 10px;
-    max-width: 290px;
-    font-size: 24px;
-    line-height: 31px;
+    margin-top: 0.42em;
+    max-width: 12.08em;
+    font-size: 1.5em;
+    line-height: 1.29em;
   }
 
   .author__card__picture {
-    width: 85px;
-    height: 72px;
+    width: 5.31em;
+    height: 4.5em;
   }
 
   .author__card__picture img {
     display: block;
     width: 50px;
+    width: 3.125em;
+  }
+
+  label[for='menu__toggler'] {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 716px) and (orientation: landscape),
+  (min-width: 1024px) {
+  body {
+    min-width: auto;
+    font-size: calc(100vw * 16 / 1440);
+  }
+  main,
+  header {
+    max-width: calc(100vw);
   }
 }

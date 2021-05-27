@@ -467,3 +467,16 @@ footer {
     max-width: calc(100vw);
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  body {
+    min-width: auto;
+    font-size: 16px;
+    max-width: auto;
+  }
+  main,
+  header {
+    max-width: 1440px;
+    padding: 0 auto;
+  }
+}

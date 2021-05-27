@@ -38,7 +38,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+
 
 
 - What was your experience?
@@ -58,7 +58,7 @@ responsiveness using fontsize and  em unit to scale.
 <hr>
 <h3 align="center">Mobile</h3>
 <hr>
-   <img src="./screenshots/mobile_view_375X776.png width="25%" alt="mobile view">
+   <img src="./screenshots/mobile_view_375X776.png" width="25%" alt="mobile view">
    <hr>
 </div>
 

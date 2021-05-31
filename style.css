@@ -14,6 +14,7 @@ ul {
   list-style: none;
   margin-inline: 0;
   padding-inline: 0;
+  width: 537px;
 }
 
 html {
@@ -50,6 +51,26 @@ nav {
   font-weight: 500;
   font-size: 1.125em;
   line-height: 1.22em;
+  display: inline-block;
+  text-align: right;
+  height: 1.78em;
+}
+
+.nav__link > span {
+  display: inline-block;
+}
+
+.nav__link:not(:first-child) {
+  width: calc(100% + 3.78em);
+  text-align: right;
+  height: 1.22em;
+}
+
+.nav__link:not(:first-child)::after {
+  content: '';
+  display: block;
+  width: calc(100% + 3.78em);
+  height: 100%;
 }
 
 .nav__link--active {
@@ -68,9 +89,9 @@ nav {
   border-bottom: none;
 }
 
-.nav__link:not(:first-child) {
+/* .nav__link:not(:first-child) {
   margin-left: 3.78em;
-}
+} */
 
 .header__menu {
   color: #f2f2f2;
@@ -137,8 +158,8 @@ nav {
 #menu__toggler:checked + header .header__menu__close {
   position: absolute;
   display: block;
-  top: 1.375em;
-  right: 1.25em;
+  top: 0.99em;
+  right: 0.9em;
 }
 
 #menu__toggler:checked + header .brand__name,
@@ -340,7 +361,7 @@ footer {
 
   nav {
     display: block;
-    flex-grow: 1;
+    /* flex-grow: 1; */
   }
 
   nav ul {
@@ -477,6 +498,6 @@ footer {
   main,
   header {
     max-width: 1440px;
-    padding: 0 auto;
+    margin: 0 auto;
   }
 }
